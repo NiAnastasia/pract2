@@ -1,0 +1,113 @@
+main{
+	font-family: Arial;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+}
+
+figure{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+figcaption{
+	width: 15rem;
+	text-align: center;
+}
+
+li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+li > img{
+	height: 21vw;
+	width: 20.5vw;
+}
+
+figure > img{
+	height: 100%;
+	width: 3vw;
+}
+
+h3{
+	font-size: 0.8rem
+}
+
+p{
+	font-size: 0.7rem;
+}
+
+button{
+	width: 14vw;
+	height: 3vw;
+	border: none;
+	margin-top: -3.5rem;
+	color: black;
+	background-color: white;
+}
+
+
+@media all and (max-width: 912px){
+	ul{
+		flex-wrap: wrap;
+	}
+
+	button{
+		margin-top: -2rem;
+	}
+
+	li > img{
+		width: 20.5vw;
+		height: 20vw;
+	}
+
+	figure > img{
+		width: 5vw;
+	}
+
+	p{
+		font-size: 0.9rem;
+	}
+
+	h3{
+		font-size: 1.2rem;
+	}
+}
+
+@media all and (max-width: 375px){
+	ul{
+		flex-wrap: wrap;
+	}
+
+	button{
+		margin-top: -4rem;
+		width: 25vw;
+		height: 6vw;
+	}
+
+	li > img{
+		width: 50.5vw;
+		height: 49vw;
+		margin: 2rem;
+	}
+
+	figure > img{
+		width: 15vw;
+	}
+
+	p{
+		display: none;
+	}
+
+	h3{
+		font-size: 1.3rem;
+	}
+}
